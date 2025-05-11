@@ -1,7 +1,3 @@
-# Astro KMF Template
-
-A modern, responsive Astro template with Tailwind CSS and Alpine.js integration. This template provides a solid foundation for building fast, SEO-friendly websites with a clean design system.
-
 ## 🚀 Features
 
 - [Astro](https://astro.build/) - The web framework for content-driven websites
