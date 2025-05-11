@@ -3,30 +3,30 @@ const currentYear = new Date().getFullYear();
 
 const footerLinks = [
   {
-    title: "Startseite",
+    title: "Home",
     links: [
-      { text: "Startseite", url: "/" },
-      { text: "Preise", url: "/preise" },
-      { text: "Kontakt", url: "/kontakt" }
+      { text: "Home", url: "/en" },
+      { text: "Prices", url: "/en/prices" },
+      { text: "Contact", url: "/en/contact" }
     ]
   },{
-    title: "Leistungen",
+    title: "Services",
     links: [
-      { text: "Hausmeisterservice", url: "/hausmeister" },
-      { text: "Umzugsservice", url: "/umzuege" },
-      { text: "Kontakt", url: "/kontakt" },
-      { text: "FAQ", url: "/faqs" },
+      { text: "Facility Management", url: "/en/facility-management" },
+      { text: "Moving Services", url: "/en/moving-services" },
+      { text: "Contact", url: "/en/contact" },
+      { text: "FAQ", url: "/en/faqs" },
     ]
   },
   {
-    title: "Unternehmen",
+    title: "Company",
     links: [
-      { text: "Über uns", url: "/ueber-uns" },
-      { text: "Karriere", url: "/karriere" },
-      { text: "Kontakt", url: "/kontakt" },
-      { text: "AGB", url: "/agb" },
-      { text: "Datenschutz", url: "/datenschutz" },
-      { text: "Impressum", url: "/impressum" }
+      { text: "About Us", url: "/en/about-us" },
+      { text: "Careers", url: "/en/careers" },
+      { text: "Contact", url: "/en/contact" },
+      { text: "Terms and Conditions", url: "/en/terms-and-conditions" },
+      { text: "Privacy Policy", url: "/en/privacy-policy" },
+      { text: "Imprint", url: "/en/imprint" }
     ]
   }
 ];
@@ -36,17 +36,17 @@ const footerLinks = [
   <div class="container-custom">
     <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
       <div class="md:col-span-2 lg:col-span-2">
-        <a href="/" class="flex items-center mb-6" aria-label="Zur Startseite">
+        <a href="/en" class="flex items-center mb-6" aria-label="Back to Home">
           <img src="/logo.png" class="h-8 w-8" alt="KMF Logo">
           <span class="ml-2 text-xl font-display font-semibold text-white transform translate-x-[5px]">KMF Products</span>
         </a>
         <p class="text-gray-400 mb-6 max-w-md">
-          Ihr zuverlässiger Partner für Hausmeisterservice und Umzüge in Euskirchen und Umgebung. 25 Jahre Erfahrung für Ihren perfekten Service.
+          Your reliable partner for facility management and moving services in Euskirchen and surrounding areas. 25 years of experience for your perfect service.
         </p>
         <div class="flex space-x-4">
           <a href="https://www.kleinanzeigen.de/s-bestandsliste.html?userId=150997060" class="text-gray-400 hover:text-primary-400 transition-colors" aria-label="Twitter">
             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg">
-              <path d="M117.5,82.14c1.91-3.94,2.79-8.05,2.79-12.68,0-16.5-13.25-30.22-30-30.22-3.4-.01-6.78,.57-10,1.71,0-18.92-13.74-31.94-29.99-31.94s-29.99,12.26-29.99,32.24V107.75c0,19.94,13.72,32.24,29.99,32.24,14.09,0,21.92-9.68,27.1-14.78,1.74,2.53,10.34,14.78,27.89,14.78,16.54,0,30-13.56,30-30.22,0-12.17-7.17-22.87-17.79-27.63Zm-47.88,36.66c-7.05,7.1-11.42,11.12-19.32,11.12-9.95,0-19.99-6.86-19.99-22.17V41.25c0-15.31,10.04-22.16,19.99-22.16h0c9.96-.01,20,6.85,20,22.16v58.44c0,5.77,.83,11.13,2.44,15.97l-3.12,3.14Zm11.33-11.42c-.43-2.42-.65-4.99-.65-7.69V52.01c3.02-1.77,6.43-2.69,9.99-2.69,11.46,0,20,9.44,20,20.15,0,5.01-1.29,9.65-7.61,16.01l-21.73,21.9Zm24.34,22.54c-9.06,0-16.32-4.47-20.64-12.02l26.97-27.26c8.06,2.69,13.67,10.34,13.67,19.13,0,11.11-8.97,20.15-20,20.15Z"/>
+              <path d="M117.5,82.14c1.91-3.94,2.79-8.05,2.79-12.68,0-16.5-13.25-30.22-30-30.22-3.4-.01-6.78,.57-10,1.71,0-18.92-13.74-31.94-29.99-31.94s-29.99,12.26-29.99,32.24V107.75c0,19.94,13.72,32.24,29.99,32.24,14.09,0,21.92-9.68,27.1-14.78,1.74,2.53,10.34,14.78,27.89,14.78,16.54,0,30-13.56,30-30.22,0-12.17-7.17-22.87-17.79-27.63Zm-47.88,36.66c-7.05,7.1-11.42,11.12-19.32,11.12-9.95,0-19.99-6.86-19.99-22.17V41.25c0-15.31,10.04-22.16,19.99-22.16h0c9.96-.01,20,6.85,20,22.16v58.44c0,5.77,.83,11.13,2.44,15.97l-3.12,3.14Zm11.33-11.42c-.43-2.42-.65-4.99-.65-7.69V52.01c3.02-1.77,6.43-2.69,9.99-2.69,11.46,0,20,9.44,20,20.15,0,5.01-1.29,9.65-7.61,16.01l-21.73,21.9Zm24.34,22.54c-9.06,0-16.32-4.47-20.64-12.02l26.97-27.26c8.06,2.69,13.67,10.34,13.67,19.13,0,11.11-8.97,20.15-20,20.15Z"/en/>
             </svg>
           </a>
           <a href="#" class="text-gray-400 hover:text-primary-400 transition-colors" aria-label="LinkedIn">
@@ -61,37 +61,14 @@ const footerLinks = [
           </a>
           <a href="#" class="text-gray-400 hover:text-primary-400 transition-colors" aria-label="Instagram">
             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"></path>
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.358-.2 6.78-2.618 6.98-6.98.058-1.28.072-.589.072-4.948 0-3.259-.014-3.667-.072-4.948-.2-4.358-2.618-6.78-6.98-6.98C15.668.014 15.259 0 12 0z"></path>
             </svg>
           </a>
         </div>
       </div>
-      
-      {footerLinks.map(column => (
-        <div>
-          <h3 class="text-lg font-semibold mb-4">{column.title}</h3>
-          <ul class="space-y-2">
-            {column.links.map(link => (
-              <li>
-                <a href={link.url} class="text-gray-400 hover:text-primary-400 transition-colors">{link.text}</a>
-              </li>
-            ))}
-          </ul>
-        </div>
-      ))}
     </div>
-    
-    <div class="border-t border-gray-800 pt-8 mt-8">
-      <div class="flex flex-col md:flex-row justify-between items-center">
-        <p class="text-gray-400 text-sm mb-4 md:mb-0">
-          &copy; {currentYear} KMF Products. Alle Rechte vorbehalten.
-        </p>
-        <div class="flex space-x-6">
-          <a href="/datenschutz" class="text-gray-400 hover:text-primary-400 text-sm transition-colors">Datenschutz</a>
-          <a href="/agb" class="text-gray-400 hover:text-primary-400 text-sm transition-colors">AGB</a>
-          <a href="/impressum" class="text-gray-400 hover:text-primary-400 text-sm transition-colors">Impressum</a>
-        </div>
-      </div>
+    <div class="flex justify-center text-xs text-gray-400">
+      <p>&copy; {currentYear} KMF Products. All Rights Reserved.</p>
     </div>
   </div>
 </footer>

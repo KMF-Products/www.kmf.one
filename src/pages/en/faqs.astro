@@ -1,248 +1,368 @@
 ---
-import Layout from '/src/layouts/Layout.astro';
-import Header from '/src/components/Header.astro';
-import Footer from '/src/components/Footer.astro';
-import HeroSection from '/src/components/HeroSection.astro';
+import Layout from "/src/layouts/Layout.astro";
+import Header from "/src/components_en/Header.astro";
+import Footer from "/src/components_en/Footer.astro";
+import HeroSection from "/src/components_en/HeroSection.astro";
 ---
 
-<Layout title="Häufig gestellte Fragen - KMF">
-  <Header />
-  <main>
-    <HeroSection 
-      title="Häufig gestellte Fragen" 
-      highlightText="Fragen"
-      description="Finden Sie Antworten auf häufige Fragen zu KMF und unseren Dienstleistungen."
-    />
-    
-    <section class="py-16 bg-white dark:bg-gray-800">
-      <div class="container-custom">
-        <div class="max-w-4xl mx-auto">
-          <!-- FAQ Categories Navigation -->
-          <div class="flex flex-wrap justify-center gap-4 mb-12">
-            <a href="#general" class="px-4 py-2 rounded-full bg-primary-100 dark:bg-primary-900 text-primary-600 dark:text-primary-400 font-medium text-sm hover:bg-primary-200 dark:hover:bg-primary-800 transition-colors">
-              Allgemein
-            </a>
-            <a href="#pricing" class="px-4 py-2 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 font-medium text-sm hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors">
-              Preise & Leistungen
-            </a>
-            <a href="#services" class="px-4 py-2 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 font-medium text-sm hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors">
-              Dienstleistungen
-            </a>
-            <a href="#area" class="px-4 py-2 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 font-medium text-sm hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors">
-              Servicegebiet
-            </a>
-            <a href="#contact" class="px-4 py-2 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 font-medium text-sm hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors">
-              Kontakt
-            </a>
-          </div>
-          
-          <!-- General FAQs -->
-          <div id="general" class="mb-16">
-            <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-8 flex items-center">
-              <span class="inline-block rounded-full bg-primary-100 dark:bg-primary-900 p-2 mr-3">
-                <svg class="w-6 h-6 text-primary-600 dark:text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                </svg>
-              </span>
-              Allgemeine Fragen
-            </h2>
-            
-            <div class="space-y-6">
-              <div class="card p-6 border border-gray-200 dark:border-gray-700">
-                <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">Was ist KMF?</h3>
-                <p class="text-gray-600 dark:text-gray-300">
-                  KMF ist ein zuverlässiger Dienstleister mit 25 Jahren Erfahrung im Hausmeisterservice und Umzugsmanagement in der Region Euskirchen und Umgebung. Wir bieten professionelle Dienstleistungen rund um Gebäudeunterhalt, Reinigung, Winterdienst und stressfreie Umzüge.
-                </p>
-              </div>
-              
-              <div class="card p-6 border border-gray-200 dark:border-gray-700">
-                <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">Wie kann KMF mir helfen?</h3>
-                <p class="text-gray-600 dark:text-gray-300">
-                  Ob Sie einen zuverlässigen Hausmeisterservice für Ihre Immobilie benötigen oder einen stressfreien Umzug planen - wir kümmern uns mit unserer langjährigen Erfahrung und höchster Sorgfalt um Ihre Anliegen. Unsere Kunden schätzen unsere Zuverlässigkeit und kompetente Arbeitsweise.
-                </p>
-              </div>
-              
-              <div class="card p-6 border border-gray-200 dark:border-gray-700">
-                <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">Für welche Art von Objekten bieten Sie Dienstleistungen an?</h3>
-                <p class="text-gray-600 dark:text-gray-300">
-                  Wir betreuen private Wohnhäuser, Mietshäuser, Gewerbeimmobilien und Bürogebäude. Egal ob regelmäßige Hausmeisterdienste, Winterdienst oder ein Umzug - wir haben für jede Anforderung die passende Lösung.
-                </p>
-              </div>
-              
-              <div class="card p-6 border border-gray-200 dark:border-gray-700">
-                <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">Wie schnell kann KMF mit den Dienstleistungen beginnen?</h3>
-                <p class="text-gray-600 dark:text-gray-300">
-                  In dringenden Fällen können wir oft bereits innerhalb von 24 Stunden helfen. Für regelmäßige Dienstleistungen oder Umzüge planen wir gerne im Voraus mit Ihnen den optimalen Zeitpunkt. Kontaktieren Sie uns einfach, wir finden eine passende Lösung.
-                </p>
-              </div>
-            </div>
-          </div>
-          
-          <!-- Pricing & Plans FAQs -->
-          <div id="pricing" class="mb-16">
-            <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-8 flex items-center">
-              <span class="inline-block rounded-full bg-primary-100 dark:bg-primary-900 p-2 mr-3">
-                <svg class="w-6 h-6 text-primary-600 dark:text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                </svg>
-              </span>
-              Preise & Leistungen
-            </h2>
-            
-            <div class="space-y-6">
-              <div class="card p-6 border border-gray-200 dark:border-gray-700">
-                <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">Was kostet der Hausmeisterservice?</h3>
-                <p class="text-gray-600 dark:text-gray-300">
-                  Unsere Preise richten sich nach Art und Umfang der Dienstleistungen. Für Hausmeisterdienste bieten wir flexible Pakete (monatlich/vierteljährlich/jährlich) ab 199€ pro Monat an. Gerne erstellen wir Ihnen ein individuelles Angebot nach Ihren Anforderungen.
-                </p>
-              </div>
-              
-              <div class="card p-6 border border-gray-200 dark:border-gray-700">
-                <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">Was kostet ein Umzugsservice?</h3>
-                <p class="text-gray-600 dark:text-gray-300">
-                  Umzugspreise beginnen bei 99€ für kleinere Transporte. Die genauen Kosten hängen von Umfang, Entfernung und benötigtem Personal ab. Wir bieten transparente Pauschalpreise ohne versteckte Kosten. Fordern Sie einfach ein unverbindliches Angebot an.
-                </p>
-              </div>
-              
-              <div class="card p-6 border border-gray-200 dark:border-gray-700">
-                <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">Gibt es Rabatte für langfristige Verträge?</h3>
-                <p class="text-gray-600 dark:text-gray-300">
-                  Ja, für Jahresverträge im Hausmeisterservice gewähren wir attraktive Rabatte. Auch bei Umzügen bieten wir Sonderkonditionen für Kombi-Leistungen oder wenn Sie uns weiterempfehlen.
-                </p>
-              </div>
-              
-              <div class="card p-6 border border-gray-200 dark:border-gray-700">
-                <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">Welche Zahlungsmöglichkeiten gibt es?</h3>
-                <p class="text-gray-600 dark:text-gray-300">
-                  Sie können per Rechnung, Überweisung oder in Ausnahmefällen auch bar bezahlen. Für regelmäßige Dienstleistungen bieten wir bequeme monatliche Abbuchung an.
-                </p>
-              </div>
-            </div>
-          </div>
-          
-          <!-- Services FAQs -->
-          <div id="services" class="mb-16">
-            <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-8 flex items-center">
-              <span class="inline-block rounded-full bg-primary-100 dark:bg-primary-900 p-2 mr-3">
-                <svg class="w-6 h-6 text-primary-600 dark:text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
-                </svg>
-              </span>
-              Dienstleistungen
-            </h2>
-            
-            <div class="space-y-6">
-              <div class="card p-6 border border-gray-200 dark:border-gray-700">
-                <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">Welche Hausmeisterdienstleistungen bieten Sie an?</h3>
-                <p class="text-gray-600 dark:text-gray-300">
-                  Unser Leistungsspektrum umfasst: Reinigung und Pflege von Außenanlagen, Instandhaltungsarbeiten, Winterdienst, Gartenpflege, Objektbetreuung, Schlüsselnotdienst, Kleinreparaturen, Müllentsorgung, Kontrollgänge und vieles mehr.
-                </p>
-              </div>
-              
-              <div class="card p-6 border border-gray-200 dark:border-gray-700">
-                <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">Was beinhaltet Ihr Umzugsservice?</h3>
-                <p class="text-gray-600 dark:text-gray-300">
-                  Wir bieten: Umzüge aller Art (privat/gewerblich), Möbeltransport, Transporter mit Fahrer, Wohnungsauflösungen (auch im Sterbefall), Entrümpelungen, Entsorgung, Möbelmontage und Aufbauservice. Alles aus einer Hand!
-                </p>
-              </div>
-              
-              <div class="card p-6 border border-gray-200 dark:border-gray-700">
-                <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">Bieten Sie auch Notdienste an?</h3>
-                <p class="text-gray-600 dark:text-gray-300">
-                  Ja, wir haben einen 24/7-Notdienst für dringende Hausmeisterarbeiten wie Wasserschäden, Schlüsselnotdienst oder Sturmschäden. Dieser Service ist gegen Aufpreis jederzeit verfügbar.
-                </p>
-              </div>
-              
-              <div class="card p-6 border border-gray-200 dark:border-gray-700">
-                <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">Kümmern Sie sich auch um Gartenarbeiten?</h3>
-                <p class="text-gray-600 dark:text-gray-300">
-                  Ja, wir bieten umfassende Gartenpflege: Rasenmähen, Hecken schneiden, Laub entfernen, Beete pflegen, Baum- und Strauchschnitt sowie die Vorbereitung auf die jeweilige Saison.
-                </p>
-              </div>
-            </div>
-          </div>
-          
-          <!-- Area FAQs -->
-          <div id="area" class="mb-16">
-            <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-8 flex items-center">
-              <span class="inline-block rounded-full bg-primary-100 dark:bg-primary-900 p-2 mr-3">
-                <svg class="w-6 h-6 text-primary-600 dark:text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                </svg>
-              </span>
-              Servicegebiet
-            </h2>
-            
-            <div class="space-y-6">
-              <div class="card p-6 border border-gray-200 dark:border-gray-700">
-                <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">In welchen Regionen sind Sie tätig?</h3>
-                <p class="text-gray-600 dark:text-gray-300">
-                  Unser Hauptservicegebiet ist Euskirchen und Umgebung. Wir decken einen Radius von ca. 50 km ab, inklusive Teile von Köln, Bonn und der Eifelregion. Für größere Umzüge oder spezielle Aufträge sind wir auch darüber hinaus flexibel.
-                </p>
-              </div>
-              
-              <div class="card p-6 border border-gray-200 dark:border-gray-700">
-                <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">Gibt es Zuschläge für entferntere Objekte?</h3>
-                <p class="text-gray-600 dark:text-gray-300">
-                  Innerhalb unseres 50-km-Radius um Euskirchen fallen keine zusätzlichen Fahrtkosten an. Für entferntere Objekte berechnen wir eine angemessene Fahrtkostenpauschale, die wir Ihnen transparent im Angebot aufschlüsseln.
-                </p>
-              </div>
-              
-              <div class="card p-6 border border-gray-200 dark:border-gray-700">
-                <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">Können Sie auch außerhalb der normalen Arbeitszeiten kommen?</h3>
-                <p class="text-gray-600 dark:text-gray-300">
-                  Ja, wir arbeiten flexibel auch am Wochenende oder abends - besonders für Umzüge oder dringende Reparaturen. Für diese Sonderzeiten berechnen wir einen angemessenen Zuschlag.
-                </p>
-              </div>
-            </div>
-          </div>
-          
-          <!-- Contact FAQs -->
-          <div id="contact" class="mb-16">
-            <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-8 flex items-center">
-              <span class="inline-block rounded-full bg-primary-100 dark:bg-primary-900 p-2 mr-3">
-                <svg class="w-6 h-6 text-primary-600 dark:text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                </svg>
-              </span>
-              Kontakt
-            </h2>
-            
-            <div class="space-y-6">
-              <div class="card p-6 border border-gray-200 dark:border-gray-700">
-                <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">Wie kann ich KMF kontaktieren?</h3>
-                <p class="text-gray-600 dark:text-gray-300">
-                  Sie erreichen uns telefonisch unter <a href="tel:+4917621458000" class="text-primary-600 dark:text-primary-400 hover:underline">+49 176 21458000</a> oder per E-Mail an <a href="mailto:kontakt@kmf.one" class="text-primary-600 dark:text-primary-400 hover:underline">kontakt@kmf.one</a>. Gerne können Sie auch unser <a href="/kontakt" class="text-primary-600 dark:text-primary-400 hover:underline">Kontaktformular</a> nutzen.
-                </p>
-              </div>
-              
-              <div class="card p-6 border border-gray-200 dark:border-gray-700">
-                <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">Wie schnell erhalte ich eine Antwort auf meine Anfrage?</h3>
-                <p class="text-gray-600 dark:text-gray-300">
-                  Wir bemühen uns, alle Anfragen innerhalb von 24 Stunden (werktags) zu beantworten. In dringenden Fällen erreichen Sie uns rund um die Uhr über unsere Notdienstnummer.
-                </p>
-              </div>
-              
-              <div class="card p-6 border border-gray-200 dark:border-gray-700">
-                <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">Kann ich einen Vor-Ort-Termin vereinbaren?</h3>
-                <p class="text-gray-600 dark:text-gray-300">
-                  Ja, gerne kommen wir zu einem kostenlosen und unverbindlichen Vor-Ort-Termin, um Ihr Anliegen zu besprechen und ein maßgeschneidertes Angebot zu erstellen.
-                </p>
-              </div>
-            </div>
-          </div>
-          
-          <div class="text-center mt-16">
-            <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">Sie haben weitere Fragen?</h3>
-            <p class="text-gray-600 dark:text-gray-300 mb-8">
-              Unser Team steht Ihnen gerne zur Verfügung. Kontaktieren Sie uns und wir antworten so schnell wie möglich.
-            </p>
-            <a href="/kontakt" class="btn-primary">Kontakt aufnehmen</a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-  <Footer />
+<Layout title="Frequently Asked Questions - KMF">
+	<Header />
+	<main>
+		<HeroSection
+			title="Frequently Asked Questions"
+			highlightText="Questions"
+			description="Find answers to frequently asked questions about KMF and our services."
+		/>
+
+		<section class="py-16 bg-white dark:bg-gray-800">
+			<div class="container-custom">
+				<div class="max-w-4xl mx-auto">
+					<!-- FAQ Categories Navigation -->
+					<div class="flex flex-wrap justify-center gap-4 mb-12">
+						<a
+							href="#general"
+							class="px-4 py-2 rounded-full bg-primary-100 dark:bg-primary-900 text-primary-600 dark:text-primary-400 font-medium text-sm hover:bg-primary-200 dark:hover:bg-primary-800 transition-colors"
+						>
+							General
+						</a>
+						<a
+							href="#pricing"
+							class="px-4 py-2 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 font-medium text-sm hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors"
+						>
+							Pricing & Services
+						</a>
+						<a
+							href="#services"
+							class="px-4 py-2 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 font-medium text-sm hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors"
+						>
+							Services
+						</a>
+						<a
+							href="#area"
+							class="px-4 py-2 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 font-medium text-sm hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors"
+						>
+							Service Area
+						</a>
+						<a
+							href="#contact"
+							class="px-4 py-2 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 font-medium text-sm hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors"
+						>
+							Contact
+						</a>
+					</div>
+
+					<!-- General FAQs -->
+					<div id="general" class="mb-16">
+						<h2
+							class="text-2xl font-bold text-gray-900 dark:text-white mb-8 flex items-center"
+						>
+							<span
+								class="inline-block rounded-full bg-primary-100 dark:bg-primary-900 p-2 mr-3"
+							>
+								<svg
+									class="w-6 h-6 text-primary-600 dark:text-primary-400"
+									fill="none"
+									stroke="currentColor"
+									viewBox="0 0 24 24"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+									></path>
+								</svg>
+							</span>
+							General Questions
+						</h2>
+
+						<div class="space-y-6">
+							<div class="card p-6 border border-gray-200 dark:border-gray-700">
+								<h3
+									class="text-lg font-semibold text-gray-900 dark:text-white mb-3"
+								>
+									What is KMF?
+								</h3>
+								<p class="text-gray-600 dark:text-gray-300">
+									KMF is a reliable service provider with 25 years of experience
+									in facility management and moving services in the Euskirchen
+									region and surrounding areas. We offer professional services
+									in building maintenance, cleaning, winter service, and
+									stress-free moves.
+								</p>
+							</div>
+
+							<div class="card p-6 border border-gray-200 dark:border-gray-700">
+								<h3
+									class="text-lg font-semibold text-gray-900 dark:text-white mb-3"
+								>
+									How can KMF help me?
+								</h3>
+								<p class="text-gray-600 dark:text-gray-300">
+									Whether you need reliable facility management for your
+									property or are planning a stress-free move – we handle your
+									needs with years of experience and great care. Our customers
+									appreciate our reliability and competent work style.
+								</p>
+							</div>
+
+							<div class="card p-6 border border-gray-200 dark:border-gray-700">
+								<h3
+									class="text-lg font-semibold text-gray-900 dark:text-white mb-3"
+								>
+									For which type of properties do you provide services?
+								</h3>
+								<p class="text-gray-600 dark:text-gray-300">
+									We service private homes, rental properties, commercial
+									buildings, and office buildings. Whether it’s regular facility
+									management, winter service, or a move – we have the right
+									solution for every requirement.
+								</p>
+							</div>
+
+							<div class="card p-6 border border-gray-200 dark:border-gray-700">
+								<h3
+									class="text-lg font-semibold text-gray-900 dark:text-white mb-3"
+								>
+									How quickly can KMF start services?
+								</h3>
+								<p class="text-gray-600 dark:text-gray-300">
+									In urgent cases, we can often help within 24 hours. For
+									regular services or moves, we plan with you in advance for the
+									optimal time. Simply contact us, and we’ll find a suitable
+									solution.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Pricing & Plans FAQs -->
+					<div id="pricing" class="mb-16">
+						<h2
+							class="text-2xl font-bold text-gray-900 dark:text-white mb-8 flex items-center"
+						>
+							<span
+								class="inline-block rounded-full bg-primary-100 dark:bg-primary-900 p-2 mr-3"
+							>
+								<svg
+									class="w-6 h-6 text-primary-600 dark:text-primary-400"
+									fill="none"
+									stroke="currentColor"
+									viewBox="0 0 24 24"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+									></path>
+								</svg>
+							</span>
+							Pricing & Services
+						</h2>
+
+						<div class="space-y-6">
+							<div class="card p-6 border border-gray-200 dark:border-gray-700">
+								<h3
+									class="text-lg font-semibold text-gray-900 dark:text-white mb-3"
+								>
+									What does the facility management service cost?
+								</h3>
+								<p class="text-gray-600 dark:text-gray-300">
+									Our prices are based on the type and scope of services. For
+									facility management, we offer flexible packages
+									(monthly/quarterly/yearly) starting at €199 per month. We’d be
+									happy to provide a custom offer based on your requirements.
+								</p>
+							</div>
+
+							<div class="card p-6 border border-gray-200 dark:border-gray-700">
+								<h3
+									class="text-lg font-semibold text-gray-900 dark:text-white mb-3"
+								>
+									What does a moving service cost?
+								</h3>
+								<p class="text-gray-600 dark:text-gray-300">
+									Moving prices start at €99 for smaller transport jobs. The
+									exact cost depends on the scope, distance, and personnel
+									required. We offer transparent flat-rate prices with no hidden
+									fees. Simply request a non-binding quote.
+								</p>
+							</div>
+
+							<div class="card p-6 border border-gray-200 dark:border-gray-700">
+								<h3
+									class="text-lg font-semibold text-gray-900 dark:text-white mb-3"
+								>
+									Are there discounts for long-term contracts?
+								</h3>
+								<p class="text-gray-600 dark:text-gray-300">
+									Yes, we offer attractive discounts for annual contracts in
+									facility management. We also offer special rates for combined
+									services or if you refer us to others.
+								</p>
+							</div>
+
+							<div class="card p-6 border border-gray-200 dark:border-gray-700">
+								<h3
+									class="text-lg font-semibold text-gray-900 dark:text-white mb-3"
+								>
+									What payment options are available?
+								</h3>
+								<p class="text-gray-600 dark:text-gray-300">
+									You can pay by invoice, bank transfer, or in exceptional
+									cases, in cash. For regular services, we also offer convenient
+									monthly direct debit.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Services FAQs -->
+					<div id="services" class="mb-16">
+						<h2
+							class="text-2xl font-bold text-gray-900 dark:text-white mb-8 flex items-center"
+						>
+							<span
+								class="inline-block rounded-full bg-primary-100 dark:bg-primary-900 p-2 mr-3"
+							>
+								<svg
+									class="w-6 h-6 text-primary-600 dark:text-primary-400"
+									fill="none"
+									stroke="currentColor"
+									viewBox="0 0 24 24"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5v14M9 5H7a2 2 0 00-2 2"
+									></path>
+								</svg>
+							</span>
+							Services
+						</h2>
+
+						<div class="space-y-6">
+							<div class="card p-6 border border-gray-200 dark:border-gray-700">
+								<h3
+									class="text-lg font-semibold text-gray-900 dark:text-white mb-3"
+								>
+									What services does KMF offer?
+								</h3>
+								<p class="text-gray-600 dark:text-gray-300">
+									KMF offers facility management, cleaning services, winter
+									services, moving services, and more. Whether you need regular
+									cleaning, moving assistance, or property maintenance, we have
+									a service to meet your needs.
+								</p>
+							</div>
+
+							<div class="card p-6 border border-gray-200 dark:border-gray-700">
+								<h3
+									class="text-lg font-semibold text-gray-900 dark:text-white mb-3"
+								>
+									Are your services customizable?
+								</h3>
+								<p class="text-gray-600 dark:text-gray-300">
+									Yes, all of our services are customizable. We offer flexible
+									packages based on your specific needs. Whether it’s the
+									frequency of cleaning or special requirements for moving, we
+									tailor our services to you.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Service Area FAQs -->
+					<div id="area" class="mb-16">
+						<h2
+							class="text-2xl font-bold text-gray-900 dark:text-white mb-8 flex items-center"
+						>
+							<span
+								class="inline-block rounded-full bg-primary-100 dark:bg-primary-900 p-2 mr-3"
+							>
+								<svg
+									class="w-6 h-6 text-primary-600 dark:text-primary-400"
+									fill="none"
+									stroke="currentColor"
+									viewBox="0 0 24 24"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+									></path>
+								</svg>
+							</span>
+							Service Area
+						</h2>
+
+						<div class="space-y-6">
+							<div class="card p-6 border border-gray-200 dark:border-gray-700">
+								<h3
+									class="text-lg font-semibold text-gray-900 dark:text-white mb-3"
+								>
+									Where do you provide services?
+								</h3>
+								<p class="text-gray-600 dark:text-gray-300">
+									We provide services primarily in the Euskirchen region and the
+									surrounding areas. If you are unsure whether we cover your
+									area, please contact us, and we can provide more details.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Contact FAQs -->
+					<div id="contact" class="mb-16">
+						<h2
+							class="text-2xl font-bold text-gray-900 dark:text-white mb-8 flex items-center"
+						>
+							<span
+								class="inline-block rounded-full bg-primary-100 dark:bg-primary-900 p-2 mr-3"
+							>
+								<svg
+									class="w-6 h-6 text-primary-600 dark:text-primary-400"
+									fill="none"
+									stroke="currentColor"
+									viewBox="0 0 24 24"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5v14M9 5H7a2 2 0 00-2 2"
+									></path>
+								</svg>
+							</span>
+							Contact
+						</h2>
+
+						<div class="space-y-6">
+							<div class="card p-6 border border-gray-200 dark:border-gray-700">
+								<h3
+									class="text-lg font-semibold text-gray-900 dark:text-white mb-3"
+								>
+									How can I get in touch with you?
+								</h3>
+								<p class="text-gray-600 dark:text-gray-300">
+									You can reach us by phone, email, or by using the contact form
+									on our website. We are happy to assist you with any questions
+									or requests you may have.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<Footer />
 </Layout>

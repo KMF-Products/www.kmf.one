@@ -1,0 +1,22 @@
+---
+import Layout from '/src/layouts/Layout.astro';
+import Header from '/src/components_en/Header.astro';
+import PricingCmp from '/src/components_en/Pricing.astro';
+import Newsletter from '/src/components_en/Newsletter.astro';
+import Footer from '/src/components_en/Footer.astro';
+import HeroSection from '/src/components_en/HeroSection.astro';
+---
+
+<Layout title="Pricing - KMF">
+  <Header />
+  <main>
+    <HeroSection 
+      title="Simple, Transparent" 
+      highlightText=" Pricing"
+      description="Choose the plan that works best for your business. All plans include a 14-day free trial with no credit card required."
+    />
+    <PricingCmp />
+    <Newsletter />
+  </main>
+  <Footer />
+</Layout>

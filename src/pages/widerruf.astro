@@ -1,0 +1,68 @@
+---
+import Layout from '/src/layouts/Layout.astro';
+import Header from '/src/components/Header.astro';
+import Footer from '/src/components/Footer.astro';
+import HeroSection from '/src/components/HeroSection.astro';
+---
+<Layout title="Widerrufsbelehrung - KMF">
+  <Header />
+  <main>
+    <HeroSection 
+      title="Widerrufsbelehrung "
+      highlightText="Widerrufsrecht"
+      description="Ihre Rechte als Verbraucher bei Vertragsrücktritt"
+    />
+    
+    <section class="py-12 bg-white dark:bg-gray-800">
+      <div class="container-custom">
+        <div class="prose prose-lg dark:prose-invert max-w-4xl mx-auto">
+          <h2>Widerrufsrecht für Verbraucher</h2>
+          <p>
+            Sie haben das Recht, binnen vierzehn Tagen ohne Angabe von Gründen diesen Vertrag zu widerrufen.
+          </p>
+          <p>
+            Die Widerrufsfrist beträgt vierzehn Tage ab dem Tag, an dem Sie oder ein von Ihnen benannter Dritter, der nicht der Beförderer ist, die Waren in Besitz genommen haben bzw. hat.
+          </p>
+
+          <h2>Widerrufsbelehrung</h2>
+          <p>
+            Um Ihr Widerrufsrecht auszuüben, müssen Sie uns (KMF Products, Elsiger Straße 92, 53881 Euskirchen, Tel: +49 176 21458000, E-Mail: kontakt@kmf.one) mittels einer eindeutigen Erklärung (z.B. ein mit der Post versandter Brief oder E-Mail) über Ihren Entschluss, diesen Vertrag zu widerrufen, informieren.
+          </p>
+
+          <h2>Folgen des Widerrufs</h2>
+          <p>
+            Wenn Sie diesen Vertrag widerrufen, haben wir Ihnen alle Zahlungen, die wir von Ihnen erhalten haben, einschließlich der Lieferkosten (mit Ausnahme der zusätzlichen Kosten, die sich daraus ergeben, dass Sie eine andere Art der Lieferung als die von uns angebotene, günstigste Standardlieferung gewählt haben), unverzüglich und spätestens binnen vierzehn Tagen ab dem Tag zurückzuzahlen, an dem die Mitteilung über Ihren Widerruf dieses Vertrags bei uns eingegangen ist.
+          </p>
+          <p>
+            Wir können die Rückzahlung verweigern, bis wir die Waren wieder zurückerhalten haben oder bis Sie den Nachweis erbracht haben, dass Sie die Waren zurückgesandt haben, je nachdem, welches der frühere Zeitpunkt ist.
+          </p>
+
+          <h2>Rücksendung der Waren</h2>
+          <p>
+            Sie haben die Waren unverzüglich und in jedem Fall spätestens binnen vierzehn Tagen ab dem Tag, an dem Sie uns über den Widerruf dieses Vertrags unterrichten, an uns zurückzusenden oder zu übergeben. Die Frist ist gewahrt, wenn Sie die Waren vor Ablauf der Frist von vierzehn Tagen absenden.
+          </p>
+          <p>
+            Sie tragen die unmittelbaren Kosten der Rücksendung der Waren.
+          </p>
+
+          <h2>Ausschluss des Widerrufsrechts</h2>
+          <p>
+            Das Widerrufsrecht besteht nicht bei Verträgen zur Lieferung von Waren, die nicht vorgefertigt sind und für deren Herstellung eine individuelle Auswahl oder Bestimmung durch den Verbraucher maßgeblich ist.
+          </p>
+
+          <h2>Muster-Widerrufsformular</h2>
+          <div class="p-4 bg-gray-100 dark:bg-gray-700 rounded-lg">
+            <p>An: KMF Products, Elsiger Straße 92, 53881 Euskirchen, E-Mail: kontakt@kmf.one</p>
+            <p class="mt-4">Hiermit widerrufe(n) ich/wir (*) den von mir/uns (*) abgeschlossenen Vertrag über den Kauf der folgenden Waren (*)/die Erbringung der folgenden Dienstleistung (*)</p>
+            <p>Bestellt am (*)/erhalten am (*)</p>
+            <p>Name des/der Verbraucher(s)</p>
+            <p>Anschrift des/der Verbraucher(s)</p>
+            <p>Unterschrift des/der Verbraucher(s) (nur bei Mitteilung auf Papier)</p>
+            <p>Datum</p>
+            <p class="text-sm mt-4">(*) Unzutreffendes streichen</p>
+          </div>
+        </div>
+      </div>
+    </section>
+	<Footer />
+</Layout>
