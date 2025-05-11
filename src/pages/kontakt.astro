@@ -1,0 +1,20 @@
+---
+import Layout from '/src/layouts/Layout.astro';
+import Header from '/src/components/Header.astro';
+import ContactForm from '/src/components/Kontakt.astro';
+import Footer from '/src/components/Footer.astro';
+import HeroSection from '/src/components/HeroSection.astro';
+---
+
+<Layout title="Kontakt - KMF Hausmeisterservice">
+  <Header />
+  <main>
+    <HeroSection 
+      title="Kontaktieren Sie uns" 
+      highlightText="Kontakt"
+      description="Wir helfen Ihnen gerne weiter bei Fragen zu unseren Hausmeister- und Umzugsdienstleistungen."
+    />
+    <ContactForm />
+  </main>
+  <Footer />
+</Layout>

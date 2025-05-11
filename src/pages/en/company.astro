@@ -1,0 +1,137 @@
+---
+import Layout from '/src/layouts/Layout.astro';
+import Header from '/src/components/Header.astro';
+import Footer from '/src/components/Footer.astro';
+import HeroSection from '/src/components/HeroSection.astro';
+---
+
+<Layout title="Über Uns - KMF">
+  <Header />
+  <main>
+    <HeroSection 
+      title="Über KMF" 
+      highlightText="KMF"
+      description="Ihr zuverlässiger Partner für Hausmeisterservice und Umzüge in Euskirchen und Umgebung."
+    />
+    
+    <section class="py-16 bg-white dark:bg-gray-800">
+      <div class="container-custom">
+        <div class="grid md:grid-cols-2 gap-12 items-center mb-24">
+          <div>
+            <span class="inline-block px-4 py-1 rounded-full bg-secondary-100 dark:bg-secondary-900 text-secondary-600 dark:text-secondary-300 font-medium text-sm mb-4">
+              Unsere Geschichte
+            </span>
+            <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-6">Von der Gründung zum vertrauenswürdigen Dienstleister</h2>
+            <p class="text-gray-600 dark:text-gray-300 mb-4">
+              KMF wurde 2024 gegründet mit dem Ziel, zuverlässige Hausmeisterdienste und professionelle Umzugsservices in der Region Euskirchen anzubieten. Was als kleines Familienunternehmen begann, hat sich schnell zu einem geschätzten Partner für Privathaushalte und Gewerbekunden entwickelt.
+            </p>
+            <p class="text-gray-600 dark:text-gray-300 mb-4">
+              Unser Weg war geprägt von harter Arbeit, Leidenschaft für unseren Service und dem ständigen Bestreben, unseren Katen den bestmöglichen Service zu bieten. Heute sind wir stolz darauf, zahlreichen Kunden in der Region vertrauensvoll zur Seite zu stehen.
+            </p>
+            <p class="text-gray-600 dark:text-gray-300">
+              Unser Motto bleibt dabei stets gleich: "Zuverlässigkeit, die man sieht. Service, den man spürt."
+            </p>
+          </div>
+          <div class="rounded-lg overflow-hidden shadow-xl">
+            <img src="/logo.png" alt="KMF Team" class="w-full h-auto" />
+          </div>
+        </div>
+        
+        <div class="mb-24">
+          <div class="text-center mb-12">
+            <span class="inline-block px-4 py-1 rounded-full bg-secondary-100 dark:bg-secondary-900 text-secondary-600 dark:text-secondary-300 font-medium text-sm mb-4">
+              Unsere Werte
+            </span>
+            <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">Wofür wir stehen</h2>
+            <p class="text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+              Unsere Werte bestimmen unser Handeln - vom Umgang mit Kunden bis zur Ausführung unserer Dienstleistungen.
+            </p>
+          </div>
+          
+          <div class="grid md:grid-cols-3 gap-8">
+            <div class="card p-6 border border-gray-200 dark:border-gray-700">
+              <div class="rounded-full bg-primary-100 dark:bg-primary-900 p-3 w-12 h-12 flex items-center justify-center mb-4">
+                <svg class="w-6 h-6 text-primary-600 dark:text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">Verlässlichkeit</h3>
+              <p class="text-gray-600 dark:text-gray-300">
+                Pünktlichkeit und Zuverlässigkeit sind unsere obersten Prinzipien. Sie können sich auf uns verlassen - immer.
+              </p>
+            </div>
+            
+            <div class="card p-6 border border-gray-200 dark:border-gray-700">
+              <div class="rounded-full bg-primary-100 dark:bg-primary-900 p-3 w-12 h-12 flex items-center justify-center mb-4">
+                <svg class="w-6 h-6 text-primary-600 dark:text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">Handwerkliche Qualität</h3>
+              <p class="text-gray-600 dark:text-gray-300">
+                Wir arbeiten mit Sorgfalt und Präzision. Jede Aufgabe erledigen wir mit dem Anspruch, dass es unsere eigene wäre.
+              </p>
+            </div>
+            
+            <div class="card p-6 border border-gray-200 dark:border-gray-700">
+              <div class="rounded-full bg-primary-100 dark:bg-primary-900 p-3 w-12 h-12 flex items-center justify-center mb-4">
+                <svg class="w-6 h-6 text-primary-600 dark:text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">Kundennähe</h3>
+              <p class="text-gray-600 dark:text-gray-300">
+                Wir sind für Sie da - mit freundlichem Service, transparenten Preisen und flexiblen Lösungen für Ihre Bedürfnisse.
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="mb-24">
+          <div class="text-center mb-12">
+            <span class="inline-block px-4 py-1 rounded-full bg-secondary-100 dark:bg-secondary-900 text-secondary-600 dark:text-secondary-300 font-medium text-sm mb-4">
+              Unser Team
+            </span>
+            <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">Die Gesichter hinter KMF</h2>
+            <p class="text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+              Unser erfahrenes Team mit über 5 Jahren gemeinsamer Expertise steht Ihnen mit Rat und Tat zur Seite.
+            </p>
+          </div>
+          
+          <div class="grid md:grid-cols-2 gap-8">
+            <div class="text-center">
+              <div class="rounded-full overflow-hidden w-32 h-32 mx-auto mb-4">
+                <img src="/KenanMesser.png" alt="Kenan Messer" class="w-full h-full object-cover" />
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-1">Kenan Messer</h3>
+              <p class="text-primary-600 dark:text-primary-400 mb-2">Geschäftsführer & Gründer</p>
+              <p class="text-gray-600 dark:text-gray-300 text-sm">
+                IT-Experte mit 5 Jahren Erfahrung in der Digitalbranche. Kombiniert technisches Know-how mit unternehmerischer Vision für innovative Gebäudelösungen.
+              </p>
+            </div>
+            
+            <div class="text-center">
+              <div class="rounded-full overflow-hidden w-32 h-32 mx-auto mb-4">
+                <img src="/Mustafa.png" alt="Kenan Messer" class="w-full h-full object-cover" />
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-1">Mustafa</h3>
+              <p class="text-primary-600 dark:text-primary-400 mb-2">Hausmeisterleitung</p>
+              <p class="text-gray-600 dark:text-gray-300 text-sm px-4">
+                Handwerksmeister mit über 25 Jahren Praxiserfahrung. Sein Motto: "Ein sauberes Haus ist ein glückliches Haus."
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="text-center">
+          <h3 class="text-2xl font-semibold text-gray-900 dark:text-white mb-4">Karriere bei KMF</h3>
+          <p class="text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
+            Wir sind immer auf der Suche nach motivierten Mitarbeitern, die unsere Leidenschaft für exzellenten Service teilen.
+          </p>
+          <a href="/karriere" class="btn-primary">Zu unseren Stellenangeboten</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Layout>

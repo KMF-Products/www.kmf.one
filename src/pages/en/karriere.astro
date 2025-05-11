@@ -1,0 +1,121 @@
+---
+import Layout from '/src/layouts/Layout.astro';
+import Header from '/src/components/Header.astro';
+import Footer from '/src/components/Footer.astro';
+import HeroSection from '/src/components/HeroSection.astro';
+---
+
+<Layout title="Karriere - KMF Hausmeisterservice">
+  <Header />
+  <main>
+    <HeroSection 
+      title="Werden Sie Teil unseres Teams" 
+      highlightText="Team"
+      description="Wir suchen zuverlässige Mitarbeiter für unseren Hausmeister- und Umzugsservice in Euskirchen und Umgebung."
+    />
+    
+    <section class="py-16 bg-white dark:bg-gray-800">
+      <div class="container-custom">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-8">Warum bei uns arbeiten?</h2>
+          
+          <div class="grid md:grid-cols-2 gap-8 mb-16">
+            <div class="card p-6 border border-gray-200 dark:border-gray-700">
+              <div class="flex items-center mb-4">
+                <div class="rounded-full bg-primary-100 dark:bg-primary-900 p-3 mr-4">
+                  <svg class="w-6 h-6 text-primary-600 dark:text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Flexible Arbeitszeiten</h3>
+              </div>
+              <p class="text-gray-600 dark:text-gray-300">
+                Vereinbarkeit von Beruf und Privatleben durch flexible Arbeitszeitmodelle in Absprache mit dem Team.
+              </p>
+            </div>
+            
+            <div class="card p-6 border border-gray-200 dark:border-gray-700">
+              <div class="flex items-center mb-4">
+                <div class="rounded-full bg-primary-100 dark:bg-primary-900 p-3 mr-4">
+                  <svg class="w-6 h-6 text-primary-600 dark:text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+                  </svg>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Moderne Ausstattung</h3>
+              </div>
+              <p class="text-gray-600 dark:text-gray-300">
+                Arbeit mit hochwertigen Werkzeugen, Maschinen und Fahrzeugen für optimale Ergebnisse.
+              </p>
+            </div>
+            
+            <div class="card p-6 border border-gray-200 dark:border-gray-700">
+              <div class="flex items-center mb-4">
+                <div class="rounded-full bg-primary-100 dark:bg-primary-900 p-3 mr-4">
+                  <svg class="w-6 h-6 text-primary-600 dark:text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                  </svg>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Teamorientiertes Arbeiten</h3>
+              </div>
+              <p class="text-gray-600 dark:text-gray-300">
+                Flache Hierarchien und ein kollegiales Miteinander in einem motivierten Team.
+              </p>
+            </div>
+            
+            <div class="card p-6 border border-gray-200 dark:border-gray-700">
+              <div class="flex items-center mb-4">
+                <div class="rounded-full bg-primary-100 dark:bg-primary-900 p-3 mr-4">
+                  <svg class="w-6 h-6 text-primary-600 dark:text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                  </svg>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Attraktive Leistungen</h3>
+              </div>
+              <p class="text-gray-600 dark:text-gray-300">
+                Faire Bezahlung, Urlaubs- und Weihnachtsgeld sowie betriebliche Altersvorsorge.
+              </p>
+            </div>
+          </div>
+          
+          <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-8">Aktuelle Stellenangebote</h2>
+          
+          <div class="space-y-6 mb-16">
+            <!-- Stellenangebot 1 -->
+            <div class="card p-6 border border-gray-200 dark:border-gray-700">
+              <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2 md:mb-0">Hausmeister (m/w/d)</h3>
+                <span class="inline-block px-3 py-1 text-sm font-medium rounded-full bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-300">
+                  Vollzeit
+                </span>
+              </div>
+              <p class="text-gray-600 dark:text-gray-300 mb-4">
+                Wir suchen einen zuverlässigen Hausmeister für die Betreuung von Wohnanlagen und Gewerbeimmobilien in Euskirchen und Umgebung.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-6">
+                <span class="inline-block px-3 py-1 text-xs font-medium rounded-full bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-300">
+                  Handwerkliche Kenntnisse
+                </span>
+                <span class="inline-block px-3 py-1 text-xs font-medium rounded-full bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-300">
+                  Führerschein Klasse B
+                </span>
+                <span class="inline-block px-3 py-1 text-xs font-medium rounded-full bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-300">
+                  Zuverlässigkeit
+                </span>
+              </div>
+              <a href="/kontakt" class="btn-secondary">Jetzt bewerben</a>
+            </div>
+            
+            <!-- Stellenangebot 2 -->
+            <div class="card p-6 border border-gray-200 dark:border-gray-700">
+              <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2 md:mb-0">Umzugshelfer (m/w/d)</h3>
+                <span class="inline-block px-3 py-1 text-sm font-medium rounded-full bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-300">
+                  Teilzeit/Vollzeit
+                </span>
+              </div>
+              <p class="text-gray-600 dark:text-gray-300 mb-4">
+                Verstärken Sie unser Umzugsteam für Wohnungs- und Büroumzüge in der Region.
+              </p>
+              <a href="/kontakt" class="btn-secondary">Jetzt bewerben</a>
+            <div class="flex flex-wrap gap-2 mb-6">
+               

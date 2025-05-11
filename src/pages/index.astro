@@ -1,0 +1,31 @@
+---
+import Layout from '/src/layouts/Layout.astro';
+import Header from '/src/components/Header.astro';
+import Hero from '/src/components/Hero.astro';
+import Features from '/src/components/Features.astro';
+import Newsletter from '/src/components/Newsletter.astro';
+import Footer from '/src/components/Footer.astro';
+---
+
+<Layout title="KMF Products">
+  <Header />
+  <main>
+    <Hero />
+    <Features />
+    <Newsletter />
+    
+    <script>
+      if (!localStorage.getItem("langRedirected")) {
+        const preferredLang = navigator.language || navigator.userLanguage;
+        const supported = ["de", "en"];
+        const shortLang = preferredLang.split("-")[0];
+
+        if (supported.includes(shortLang) && shortLang !== "de") {
+          localStorage.setItem("langRedirected", "true");
+          window.location.replace(`/${shortLang}`);
+        }
+      }
+    </script>
+  </main>
+  <Footer />
+</Layout>
