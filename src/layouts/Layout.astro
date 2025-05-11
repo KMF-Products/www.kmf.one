@@ -10,8 +10,13 @@ export interface Props {
 
 const { 
   title, 
-  description = "KMF Products Homepage"
+  description = "KMF Products Homepage", 
+  openGraph = {},
+  twitter = {}
 } = Astro.props;
+
+const { url = String(Astro.url.pathname), images = [{ url: '/logo.png', alt: 'Site Logo' }] } = openGraph;
+
 ---
 
 <!doctype html>
@@ -22,6 +27,24 @@ const {
     <link rel="icon" type="image/x-icon" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content={description} />
+    <meta name="robots" content={"index, follow"} />
+    <meta name="robots" content={"index, follow"} />
+
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content={"KMF Products"} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content='website' />
+    <meta property="og:url" content={String(Astro.url.pathname)} />
+    <meta property="og:site_name" content={"KMF Products"} />
+    <meta property="og:image" content={"https://www.kmf.one/logo.png"} />
+    
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content={'summary_large_image'} />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={"https://www.kmf.one/logo.png"} />
+    
     <title>{title}</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
