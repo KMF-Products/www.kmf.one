@@ -36,7 +36,7 @@
             </div>
             <div class="ml-4">
               <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Telefon & WhatsApp</h3>
-              <a href="tel:+4917621458000" class="text-primary-600 dark:text-primary-400 hover:underline">+49 176 21458000</a>
+              <a href="tel:+4915563952149" class="text-primary-600 dark:text-primary-400 hover:underline">+49 15563 952149</a>
               <p class="text-gray-500 dark:text-gray-400 text-sm mt-2">Mo-Fr: 8:00-18:00 Uhr</p>
               <p class="text-gray-500 dark:text-gray-400 text-sm">Sa: 9:00-14:00 Uhr</p>
             </div>
@@ -75,98 +75,6 @@
               </svg>
             </a>
           </div>
-        </div>
-      </div>
-      
-      <div class="slide-up" style="animation-delay: 150ms">
-        <div class="card p-8 border border-gray-200 dark:border-gray-700 rounded-xl shadow-sm">
-          <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">Kontaktformular</h3>
-          
-          <form x-data="{ name: '', email: '', phone: '', message: '', submitted: false, errors: {} }">
-            <div class="space-y-5">
-              <div>
-                <label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Ihr Name*</label>
-                <input 
-                  type="text" 
-                  id="name" 
-                  x-model="name"
-                  class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-primary-500 dark:focus:ring-primary-400"
-                  placeholder="Vor- und Nachname"
-                  required
-                />
-                <p class="text-red-500 text-sm mt-1" x-show="errors.name" x-text="errors.name"></p>
-              </div>
-              
-              <div class="grid md:grid-cols-2 gap-5">
-                <div>
-                  <label for="contact-email" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">E-Mail*</label>
-                  <input 
-                    type="email" 
-                    id="contact-email" 
-                    x-model="email"
-                    class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-primary-500 dark:focus:ring-primary-400"
-                    placeholder="Ihre E-Mail-Adresse"
-                    required
-                  />
-                  <p class="text-red-500 text-sm mt-1" x-show="errors.email" x-text="errors.email"></p>
-                </div>
-                
-                <div>
-                  <label for="phone" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Telefon</label>
-                  <input 
-                    type="tel" 
-                    id="phone" 
-                    x-model="phone"
-                    class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-primary-500 dark:focus:ring-primary-400"
-                    placeholder="Ihre Telefonnummer"
-                  />
-                </div>
-              </div>
-              
-              <div>
-                <label for="message" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Ihre Nachricht*</label>
-                <textarea 
-                  id="message" 
-                  x-model="message"
-                  rows="5" 
-                  class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-primary-500 dark:focus:ring-primary-400"
-                  placeholder="Beschreiben Sie Ihr Anliegen"
-                  required
-                ></textarea>
-                <p class="text-red-500 text-sm mt-1" x-show="errors.message" x-text="errors.message"></p>
-              </div>
-              
-              <div class="pt-2">
-                <button 
-                  type="submit" 
-                  class="w-full btn-primary py-3 px-6 text-lg"
-                  x-on:click.prevent="
-                    errors = {};
-                    if (!name) errors.name = 'Bitte geben Sie Ihren Namen ein';
-                    if (!email) errors.email = 'Bitte geben Sie Ihre E-Mail-Adresse ein';
-                    else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) errors.email = 'Bitte geben Sie eine gültige E-Mail-Adresse ein';
-                    if (!message) errors.message = 'Bitte geben Sie Ihre Nachricht ein';
-                    
-                    if (Object.keys(errors).length === 0) {
-                      submitted = true;
-                    }
-                  "
-                >
-                  Nachricht senden
-                </button>
-              </div>
-            </div>
-            
-            <div class="text-center p-6 bg-primary-50 dark:bg-primary-900/30 rounded-lg mt-6" x-show="submitted" x-cloak>
-              <svg class="w-12 h-12 text-primary-500 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-              </svg>
-              <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">Vielen Dank für Ihre Nachricht!</h3>
-              <p class="text-gray-600 dark:text-gray-300">
-                Wir haben Ihre Anfrage erhalten und werden uns innerhalb von 24 Stunden bei Ihnen melden.
-              </p>
-            </div>
-          </form>
         </div>
       </div>
     </div>
